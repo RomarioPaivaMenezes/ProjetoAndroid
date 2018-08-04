@@ -9,5 +9,6 @@ import br.com.fiap.romario.alunocloud.model.Aluno;
 public interface AlunoRepository extends MongoRepository<Aluno, String>{
 
     Aluno findByRg(String rg);
+    Aluno findByNome(String nome,String senha);
 
 }

@@ -23,6 +23,11 @@ public class AlunoComponent {
     public List<Aluno> findAll() {
         return alunoRepository.findAll();
     }
+    
+    
+    public Aluno login(String nome, String senha) {
+    	return alunoRepository.findByNome(nome, senha);
+    }
 
     public void deleteAll() {
         alunoRepository.deleteAll();

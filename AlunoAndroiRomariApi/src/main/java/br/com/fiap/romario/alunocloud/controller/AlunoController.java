@@ -25,6 +25,11 @@ public class AlunoController {
     private Aluno findAll(@PathVariable(value = "rg") String rg) {
         return alunoComponent.buscarAluno(rg);
     }
+    
+    @GetMapping(value = "/nome/{nome}/senha/{senha}")
+    private Aluno login(@PathVariable(value = "nome") String nome, @PathVariable(value = "senha") String senha) {
+        return alunoComponent.login(nome,senha);
+    }
 
     @PostMapping
     private void save(@RequestBody Aluno aluno) {
