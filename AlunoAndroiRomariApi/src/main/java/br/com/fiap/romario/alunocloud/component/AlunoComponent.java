@@ -25,8 +25,8 @@ public class AlunoComponent {
     }
     
     
-    public Aluno login(String nome, String senha) {
-    	return alunoRepository.findByNome(nome, senha);
+    public Aluno login(String email, String senha) {
+    	return alunoRepository.findByNome(email, senha);
     }
 
     public void deleteAll() {
