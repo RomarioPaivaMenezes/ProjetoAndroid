@@ -49,6 +49,10 @@ public class AlunoComponent {
               alunos.setRg(aluno.getRg());
               alunos.setDataNascimento(aluno.getDataNascimento());
               alunos.setNome(aluno.getNome());
+              alunos.setEmail(aluno.getEmail());
+              alunos.setCpf(aluno.getCpf());
+              alunos.setSenha(aluno.getSenha());
+              alunos.setTelefone(aluno.getTelefone());
           }
           
           alunoRepository.save(alunos);

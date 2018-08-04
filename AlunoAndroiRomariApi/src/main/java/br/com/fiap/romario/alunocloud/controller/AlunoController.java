@@ -26,7 +26,7 @@ public class AlunoController {
         return alunoComponent.buscarAluno(rg);
     }
     
-    @GetMapping(value = "/email/{email}/senha/{senha}")
+    @GetMapping(value = "/{email}/{senha}")
     private Aluno login(@PathVariable(value = "email") String email, @PathVariable(value = "senha") String senha) {
         return alunoComponent.login(email,senha);
     }
